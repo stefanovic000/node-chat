@@ -8,11 +8,13 @@ I wrote it as a school project, mostly to get comfortable with Express and Socke
 
 ## Run
 
-```bash
+```powershell
 npm install
-cp .env.example .env     # then edit the values if you want
-npm start                # http://localhost:3000
+Copy-Item .env.example .env    # Windows (PowerShell)
+npm start                      # http://localhost:3000
 ```
+
+On Linux/macOS the second line is `cp .env.example .env`. If you skip it the app still runs on its defaults (port 3000, dev session secret) — copy it before putting this anywhere real and set a proper `SESSION_SECRET`.
 
 ## How it works
 
